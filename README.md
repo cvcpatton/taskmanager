@@ -52,20 +52,19 @@ flask run
 http://127.0.0.1:5000/
 
 
-## Project structure, taskmanager/
-│
-├── app.py
-├── models.py
-… taskmanager.db - SQLite database file (auto-created)
-├── static/
-│   └── styles.css
-├── templates/
-│   ├── base.html
-│   ├── index.html
-│   ├── add_task.html
-│   └── edit_task.html
-├── requirements.txt
-└── README.md
+## Project structure, taskmanager/  
+│  
+├── app.py  
+├── models.py  
+… taskmanager.db - SQLite database file (auto-created)  
+├── static/  
+│   └── styles.css  
+├── templates/  
+│   ├── base.html  
+│   ├── index.html  
+│   ├── add_task.html  
+│   └── edit_task.html  
+├── requirements.txt  
  
 ## Potential Upgrades
 - Add user authentication and login sessions
