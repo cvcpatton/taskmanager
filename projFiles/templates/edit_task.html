@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Edit Task</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" value="{{ task.title }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="3">{{ task.description }}</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="status" class="form-label">Status</label>
+        <select class="form-select" id="status" name="status" required>
+            <option value="In Progress" {% if task.status == 'In Progress' %}selected{% endif %}>In Progress</option>
+            <option value="Urgent" {% if task.status == 'Urgent' %}selected{% endif %}>Urgent / High Priority</option>
+            <option value="Pending" {% if task.status == 'Pending' %}selected{% endif %}>Pending / On Hold</option>
+            <option value="Delegate/Follow-up" {% if task.status == 'Delegate' %}selected{% endif %}>Delegate / Follow-up</option>
+            <option value="Cancelled" {% if task.status == 'Cancelled' %}selected{% endif %}>Cancelled / Dropped</option>
+            <option value="Completed" {% if task.status == 'Completed' %}selected{% endif %}>Completed / Done</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Task</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
