@@ -1,7 +1,5 @@
 # Python/Flask Task Manager ✅  
-A full-stack CRUD (Create, Read, Update, Delete) web application built with Flask and Render.
-
-This project demonstrates backend data management, dynamic HTML rendering, and front-end interaction for task organization and productivity tracking.
+A Python Flask app to add, edit, and organize daily tasks in a clean, responsive interface. This project demonstrates backend data management, dynamic HTML rendering, and front-end interaction for task organization and productivity tracking.
 
 ## Features
 - Add, view, edit, and delete tasks  
