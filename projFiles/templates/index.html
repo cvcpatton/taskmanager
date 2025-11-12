@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+{% block content %}
+  <h2 class="mb-3">My Tasks</h2>
+  <a href="{{ url_for('add_task') }}" class="btn btn-add-task mb-3">Add Task</a>
+
+  {% if tasks %}
+    {% for task in tasks %}
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ task.title }}</h5>
+          <p class="card-text">{{ task.description }}</p>
+          <span class="badge badge-status">{{ task.status }}</span>
+          <div class="mt-2">
+            <a href="{{ url_for('edit_task', task_id=task.id) }}" class="btn btn-sm btn-outline-success">Edit</a>
+            <a href="{{ url_for('delete_task', task_id=task.id) }}" class="btn btn-sm btn-outline-danger">Delete</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No tasks yet. Add one!</p>
+  {% endif %}
+{% endblock %}
