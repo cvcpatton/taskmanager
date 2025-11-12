@@ -1,0 +1,73 @@
+/* static/styles.css */
+
+.custom-navbar {
+    background-color: #0b3d91; /* Dark blue */
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 3rem;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  margin-right: 0.5rem;
+}
+
+/* Task Cards with Dark Blue Accent */
+.task-card {
+    border-left: 5px solid #0b3d91; /* Dark blue stripe */
+    background-color: #ffffff;       /* Keep card background white */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Optional: Card title in dark blue */
+.task-card .card-title {
+    color: #0b3d91;
+    font-weight: bold;
+}
+
+/* Optional: Card buttons */
+.task-card .btn-primary {
+    background-color: #0b3d91;
+    border-color: #0b3d91;
+}
+
+.task-card .btn-primary:hover {
+    background-color: #072d61;
+    border-color: #072d61;
+}
+
+/* Custom Add Task Button */
+.btn-add-task {
+    background-color: #0b3d91;   /* Dark blue to match header */
+    color: #ffffff;              /* White text */
+    border: none;                /* Remove border */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-add-task:hover {
+    background-color: #072d61;   /* Slightly darker blue on hover */
+    color: #ffffff;
+}
+
+.badge-status {
+    font-family: Consolas, monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: #006d6a; /* Dark teal */
+    color: #ffffff;             /* White text */
+    padding: 0.35em 0.65em;
+    border-radius: 0.25rem;
+    display: inline-block;
+}
