@@ -12,7 +12,10 @@ A Python Flask app to add, edit, and organize daily tasks in a clean, responsive
 - Backend: Python 3, Flask, SQLAlchemy  
 - Frontend: HTML5, CSS3, Bootstrap 5 (Jinja templates), Render
 - Database: SQLite  
-- Tools: Git/GitHub, PyCharm  
+- Tools: Git/GitHub, PyCharm
+
+## Live Demo 🚀  
+[Task Manager - Live Demo](https://cvcpatton.github.io/taskmanager/loading.html "Task Manager") (Hosted on Render)  
 
 ## Learning Objectives
 - Implement full-stack CRUD functionality using Flask routes and SQLAlchemy models  
